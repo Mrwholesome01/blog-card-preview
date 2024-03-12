@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; margin-top: 15px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: figtree;
+    }
+
+    body, html {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    body {
+      background-color: hsl(47, 88%, 63%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blog-card {
+      background-color: hsl(0, 0%, 100%);
+      height: auto;
+      width: 350px;
+      box-shadow: 10px 10px 0px black;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-radius: 10px;
+    }
+
+    .blog-card > * {
+      margin-bottom: 12px;
+    }
+
+    .learning {
+      background-color: hsl(47, 88%, 63%);
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: 800;
+    }
+
+    .published {
+      font-weight: 500;
+    }
+
+    .Foundaton {
+      font-weight: 800;
+      font-size: 25px;
+    }
+
+    .backbone {
+      color: hsl(0, 0%, 50%);
+    }
+
+    .last {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .last :nth-child(2) {
+      font-weight: 800;
+    }
+
+    @media only screen and (max-width: 450px) {
+      .blog-card {
+        gap: 12px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="blog-card">
+    <img src="../blog-preview-card-main/assets/images/illustration-article.svg" alt="">
+    <div class="learning">Learning</div>
+    <div class="published">Published 21 Dec 2023</div>
+    <div class="Foundaton">HTML and CSS Foundaton</div>
+    <div class="backbone">This Languages are the backbone of every website, defining structure, content and presentation</div>
+    <div class="last"><img src="../blog-preview-card-main/assets/images/image-avatar.webp" alt=""><span>Greg Hooper</span></div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdulquddus Muhammad</a>.
+  </div>
+</body>
+</html>
